@@ -1,5 +1,19 @@
 #!/bin/bash
 
+cli_list={
+    git
+    wget
+    curl
+    vim
+    htop
+}
+
+cask_list={
+    pycharm-ce
+    visual-studio-code
+    iterm2
+}
+
 # Check if Homebrew is installed
 if ! command -v brew &>/dev/null; then
     echo "Homebrew not found. Installing Homebrew, macOS package manager..."
