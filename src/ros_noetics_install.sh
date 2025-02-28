@@ -14,6 +14,41 @@ cask_list={
     iterm2
 }
 
+conda_list={
+
+}
+
+ros_package_list={
+
+}
+
+#check the cpu architecture of the Mac for path file location
+if [[ "$(uname -m)" == "arm64" ]]; then
+    BREW_PATH="/opt/homebrew/bin"
+else
+    BREW_PATH="/usr/local/bin"
+fi  
+
+#Function to install CLI tools
+install_cli_tools() {
+
+}
+
+# FUnction to install cask apllications
+install_cask() {
+
+}
+
+# Function to install Conda pakcages
+install_conda_package() {
+
+}
+
+# Function to install ROS packages
+install_ros_package() {
+
+}
+
 # Check if Homebrew is installed
 if ! command -v brew &>/dev/null; then
     echo "Homebrew not found. Installing Homebrew, macOS package manager..."
