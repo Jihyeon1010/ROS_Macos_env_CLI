@@ -19,7 +19,8 @@ conda_list={
 }
 
 ros_package_list={
-
+    gazebo-ros
+    vinca
 }
 
 #check the cpu architecture of the Mac for path file location
@@ -36,7 +37,7 @@ install_cli_tools() {
 
 # FUnction to install cask apllications
 install_cask() {
-
+    
 }
 
 # Function to install Conda pakcages

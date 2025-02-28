@@ -45,8 +45,8 @@ install_conda_package() {
 }
 
 # Function to install ROS packages
-install_ros_package() {
-
+install_essential_ros_package() {
+    gazebo-ros
 }
 
 # Check if Homebrew is installed
