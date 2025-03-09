@@ -15,12 +15,16 @@ cask_list={
 }
 
 conda_list={
-
+    ros2-humble-desktop
+    ros2-humble-desktop-full
+    ros2-humble-ros-base
+    ros2-humble-ros-core
 }
 
 ros_package_list={
     gazebo-ros
     vinca
+    turtlesim
 }
 
 #check the cpu architecture of the Mac for path file location
