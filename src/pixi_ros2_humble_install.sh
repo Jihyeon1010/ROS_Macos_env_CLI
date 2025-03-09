@@ -6,21 +6,40 @@ cli_list={
     curl
     vim
     htop
+    tree
+
 }
 
 cask_list={
     pycharm-ce
     visual-studio-code
     iterm2
+    pixi
 }
 
-conda_list={
-
+pixi_list={
+    ros-humble-desktop
+    ros-humble-desktop-full
+    ros-humble-ros-base
+    ros-humble-ros-core
 }
 
 ros_package_list={
-    gazebo-ros
-    vinca
+    gazebo
+    turtlebot3
+    dynamixel-sdk
+    moveit
+    turtlesim
+    navigation2
+    image-view
+    camera-calibration
+    camke
+    complier
+    ninja
+    pkg-config
+    ament-camke-auto
+    navigation2
+    nav2-bringup
 }
 
 #check the cpu architecture of the Mac for path file location
@@ -32,22 +51,34 @@ fi
 
 #Function to install CLI tools
 install_cli_tools() {
-
+    if [[ -n "$cli_list" ]]; then
+        for cli in "${cli_list[@]}"; do
+            if ! command -v "$cli" &>/dev/null; then
+                echo "$cli not found. Installing $cli..."
+                brew install "$cli"
+            else
+                echo "$cli is already installed."
+            fi
+        done
+    else
+        echo "No CLI tools to install."
+    fi
 }
 
-# FUnction to install cask apllications
+# Function to install cask apllications
 install_cask() {
-    
-}
-
-# Function to install Conda pakcages
-install_conda_package() {
-
-}
-
-# Function to install ROS packages
-install_ros_package() {
-
+    if [[ -n "$cask_list" ]]; then
+        for cask in "${cask_list[@]}"; do
+            if ! brew list --cask | grep -q "$cask"; then
+                echo "$cask not found. Installing $cask..."
+                brew install --cask "$cask"
+            else
+                echo "$cask is already installed."
+            fi
+        done
+    else
+        echo "No cask applications to install."
+    fi
 }
 
 # Check if Homebrew is installed
