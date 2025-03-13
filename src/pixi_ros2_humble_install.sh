@@ -1,20 +1,22 @@
 #!/bin/bash
 
-cli_list={
-    git
-    wget
-    curl
-    vim
+command_line_tools_list={
     htop
     tree
+    pixi
 
 }
 
-cask_list={
+
+dev_tools_list={
+    code
     pycharm-ce
-    visual-studio-code
-    iterm2
-    pixi
+    vim
+    neovim
+    sublime-text
+    emacs
+    qt-ecreator
+    git
 }
 
 pixi_list={

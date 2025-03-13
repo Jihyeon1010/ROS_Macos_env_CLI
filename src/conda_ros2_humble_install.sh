@@ -1,20 +1,21 @@
 #!/bin/bash
 
-cli_list={
-    git
-    wget
-    curl
-    vim
-    htop
-}
-
-cask_list={
+dev_tools_list={
+    code
     pycharm-ce
-    visual-studio-code
+    vim
+    neovim
+    sublime-text
+    emacs
+    qt-creator
+    miniforge
     iterm2
+    git
+    htop
+    tree
 }
 
-conda_list={
+conda_package_list={
     ros2-humble-desktop
     ros2-humble-desktop-full
     ros2-humble-ros-base
@@ -25,6 +26,8 @@ ros_package_list={
     gazebo-ros
     vinca
     turtlesim
+    turtlebot3
+    dynamixel-sdk
 }
 
 #check the cpu architecture of the Mac for path file location
