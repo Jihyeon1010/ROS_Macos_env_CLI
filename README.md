@@ -1,10 +1,32 @@
-# ROS_env_CLI #
+# ROS_dev_env_cli #
 
 ## Installation ##
 
-### Installation Conda ###
+### Install Conda ###
 
-### Installation ROS ###
+```bash
+
+```
+
+### Install Pixi ###
+
+```bash
+
+```
+
+### Install ROS ###
+
+* Utilise conda
+
+```bash
+
+```
+
+* Utilise pixi
+
+```bash
+
+```
 
 ### Installation ROS Packages ###
 
@@ -17,4 +39,9 @@ conda install ros-{distros}-{Package name}
 #Pixi
 pixi add ros-{distros}-{Package name}
 ```
-  
+
+* [List of available ROS Package utilising in conda](https://anaconda.org/RoboStack/repo)
+
+* [List of available ROS Package utilising in pixi](https://prefix.dev/channels/robostack)
+
+## Reference ##
